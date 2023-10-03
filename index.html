@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Site - design</title>
+    <!-- link style css  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- <script defer src="script.js"></script> -->
+</head>
+<body>
+<!-- ---------- navbar ---------  -->
+    <nav>
+        <div class="nev-left">
+            <!-- <img src="images/logo.png" alt="" class="logo"> -->
+            <a href="#"><h2 class="logo_heading">Messages</h2></a>
+            <ul>
+                <li><img src="images/notification.png" alt=""></li>
+                <li><img src="images/inbox.png" alt=""></li>
+                <li><img src="images/video.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="nev-right">
+            <div class="search-box">
+                <img src="images/search.png" alt="">
+                <input type="search" placeholder="Search">
+            </div>
+            <div class="nav-user-icon online" onclick="settingMenuToogle()">
+                <img class="main_profie" src="images/mainprofile.jpg" alt="profile pic">
+            </div>
+        </div>
+
+        <!-- ------ setting menu ------  -->
+        <div class="setting-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+
+            <div class="setting-menu-inner">
+                <div class="user-profile">
+                    <img src="images/mainprofile.jpg" alt="">
+                    <div>
+                        <p>Jhon Nicolshon</p>
+                        <a href="#">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png" alt="">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us the improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="images/setting.png" class="setting-icon">
+                    <a href="#"> Setting & privacy <img src="images/arrow.png " width="10px" alt=""></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/help.png" class="setting-icon">
+                    <a href="#"> Help and support <img src="images/arrow.png " width="10px" alt=""></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/display.png" class="setting-icon">
+                    <a href="#"> Display & Accciblity <img src="images/arrow.png " width="10px" alt=""></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/logout.png" class="setting-icon">
+                    <a href="#">Logout <img src="images/arrow.png " width="10px" alt=""></a>
+                </div>
+            </div>
+           
+        </div>
+    </nav>
+
+    <!-- *** container section main section starty ***  -->
+    <div class="container">
+        <!-- ---------left side bar ---------  -->
+        <div class="left-side-bar">
+            <div class="imp-links">
+                <a href="#"><img src="images/news.png" alt="">Latest News</a>
+                <a href="#"><img src="images/friends.png" alt="">Friends</a>
+                <a href="#"><img src="images/group.png" alt="">Group</a>
+                <a href="#"><img src="images/marketplace.png" alt="">Marketplace</a>
+                <a href="#"><img src="images/watch.png" alt="">Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Your shortcuts</p>
+                <a href="#"><img src="images/shortcut-1.png" alt="">Web Developer</a>
+                <a href="#"><img src="images/shortcut-2.png" alt="">Web Design Course</a>
+                <a href="#"><img src="images/shortcut-3.png" alt="">Full stack developer</a>
+                <a href="#"><img src="images/shortcut-4.png" alt="">Design Exparts</a>
+            </div>
+        </div>
+        <!-- -------- main content ---------  -->
+        <div class="main-content">
+
+            <div class="story-gallary">
+                <div class="story story-1">
+                    <img src="images/mainprofile.jpg" alt="">
+                    <p>Post Story</p>
+                </div>
+
+                <div class="story story-2">
+                    <img src="images/member-1.png" alt="">
+                    <p>Alesandro</p>
+                </div>
+
+                <div class="story story-3">
+                    <img src="images/member-2.png" alt="">
+                    <p>Alison</p>
+                </div>
+
+                <div class="story story-4">
+                    <img src="images/member-3.png" alt="">
+                    <p>Jecson</p>
+                </div>
+
+                <div class="story story-5">
+                    <img src="images/member-4.png" alt="">
+                    <p>Mickel</p>
+                </div>
+                
+            </div>
+
+
+           <div class="write-post-container">
+            <div class="user-profile">
+                <img src="images/mainprofile.jpg" alt="">
+                <div>
+                    <p>Ripon Mardy</p>
+                    <small>Public <i class="fa-solid fa-caret-down"></i> </small>
+                </div>
+            </div>
+
+            <div class="post-input-container">
+                <textarea cols="3"  placeholder="What's on your mind jhon"></textarea>
+                <div class="add-post-link">
+                    <a href="#"><img src="images/live-video.png" alt="">Live Video</a>
+                    <a href="#"><img src="images/photo.png" alt="">Photo /Video</a>
+                    <a href="#"><img src="images/feeling.png" alt="">Feeling / Activity</a>
+                </div>
+            </div>
+           </div>
+
+
+
+           <!-- -- post container ---  -->
+           <div class="post-container">
+            <div class="post-row">
+                <div class="user-profile">
+                    <img src="images/mainprofile.jpg" alt="">
+                    <div>
+                        <p>Ripon Mardy</p>
+                        <span>june 24, 2021, 10:10</span>
+                    </div>
+                </div>
+                <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            </div>
+            
+            <p class="post-text">Lorem ipsum dolor sit amet, <span>@Mardy</span> consectetur adipisicing elit. Impedit minima labore culpa modi itaque accusantium ratione aut ipsam voluptas fugit! <a href="#">#youtube</a>
+            <a href="#">#facebook</a>
+            <img src="images/feed-image-1.png" class="post-img">
+
+            <div class="post-row">
+                <div class="post-activity">
+                    <div><img src="images/like-blue.png" alt=""> 120</div>
+                    <div><img src="images/comments.png" alt=""> 34</div>
+                    <div><img src="images/share.png" alt=""> 10</div>
+                </div>
+                <div class="post-profile-icon">
+                    <img src="images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+        </p>
+           </div>
+
+
+
+
+           <div class="post-container">
+            <div class="post-row">
+                <div class="user-profile">
+                    <img src="images/mainprofile.jpg" alt="">
+                    <div>
+                        <p>Ripon Mardy</p>
+                        <span>june 24, 2021, 10:10</span>
+                    </div>
+                </div>
+                <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            </div>
+            
+            <p class="post-text">Lorem ipsum dolor sit amet, <span>@Mardy</span> consectetur adipisicing elit. Impedit minima labore culpa modi itaque accusantium ratione aut ipsam voluptas fugit! <a href="#">#youtube</a>
+            <a href="#">#facebook</a>
+            <img src="images/feed-image-4.png" class="post-img">
+
+            <div class="post-row">
+                <div class="post-activity">
+                    <div><img src="images/like-blue.png" alt=""> 120</div>
+                    <div><img src="images/comments.png" alt=""> 34</div>
+                    <div><img src="images/share.png" alt=""> 10</div>
+                </div>
+                <div class="post-profile-icon">
+                    <img src="images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+        </p>
+           </div>
+
+
+           <div class="post-container">
+            <div class="post-row">
+                <div class="user-profile">
+                    <img src="images/mainprofile.jpg" alt="">
+                    <div>
+                        <p>Ripon Mardy</p>
+                        <span>june 24, 2021, 10:10</span>
+                    </div>
+                </div>
+                <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            </div>
+            
+            <p class="post-text">Lorem ipsum dolor sit amet, <span>@Mardy</span> consectetur adipisicing elit. Impedit minima labore culpa modi itaque accusantium ratione aut ipsam voluptas fugit! <a href="#">#youtube</a>
+            <a href="#">#facebook</a>
+            <img src="images/feed-image-2.png" class="post-img">
+
+            <div class="post-row">
+                <div class="post-activity">
+                    <div><img src="images/like-blue.png" alt=""> 120</div>
+                    <div><img src="images/comments.png" alt=""> 34</div>
+                    <div><img src="images/share.png" alt=""> 10</div>
+                </div>
+                <div class="post-profile-icon">
+                    <img src="images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+        </p>
+           </div>
+
+
+
+           <div class="post-container">
+            <div class="post-row">
+                <div class="user-profile">
+                    <img src="images/mainprofile.jpg" alt="">
+                    <div>
+                        <p>Ripon Mardy</p>
+                        <span>june 24, 2021, 10:10</span>
+                    </div>
+                </div>
+                <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            </div>
+            
+            <p class="post-text">Lorem ipsum dolor sit amet, <span>@Mardy</span> consectetur adipisicing elit. Impedit minima labore culpa modi itaque accusantium ratione aut ipsam voluptas fugit! <a href="#">#youtube</a>
+            <a href="#">#facebook</a>
+            <img src="images/feed-image-3.png" class="post-img">
+
+            <div class="post-row">
+                <div class="post-activity">
+                    <div><img src="images/like-blue.png" alt=""> 120</div>
+                    <div><img src="images/comments.png" alt=""> 34</div>
+                    <div><img src="images/share.png" alt=""> 10</div>
+                </div>
+                <div class="post-profile-icon">
+                    <img src="images/profile-pic.png" alt=""><i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+        </p>
+           </div>
+
+           <button type="button" class="load-more-btn" >Load More</button>
+        </div>
+
+
+        <!-- ----------- right side bar ---------  -->
+        <div class="right-side-bar">
+
+            <div class="side-bar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social media</h4>
+                    <p> <i class="fa-solid fa-location-dot"></i> Wilson Tech Park</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>10</h3>
+                    <span>April</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p> <i class="fa-solid fa-location-dot"></i> Dision Tech Park</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+
+            <div class="side-bar-title">
+                <h4>Advertisment</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-adds">
+
+            <div class="side-bar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png">
+                </div>
+                <p>Alesandro mosa</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png">
+                </div>
+                <p>Zbesico martenex</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>Copyright 2023 - Facebook Clone</p>
+    </div>
+
+</body>
+</html>
